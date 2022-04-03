@@ -20,5 +20,7 @@ export function fireAfterInterval(
     method();
     return null;
   }
+
+  // @ts-ignore
   return setTimeout(() => method(), interval);
 }
